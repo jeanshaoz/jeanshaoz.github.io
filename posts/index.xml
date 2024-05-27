@@ -2,16 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My New Hugo Site</title>
-    <link>https://example.org/posts/</link>
+    <link>https://jeanshaoz/jeanshaoz.github.io/posts/</link>
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jeanshaoz/jeanshaoz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://jeanshaoz/jeanshaoz.github.io/posts/20240527/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jeanshaoz/jeanshaoz.github.io/posts/20240527/</guid>
+      <description>Node 应用开发 Node 简介 Node 是服务器的 JavaScript 运行环境，提供 API 与操作系统互动。&#xA;主要用途：&#xA;开发前端应用 快速搭建服务 架设网站 npm 安装 Node 的时候，会同时安装 npm。&#xA;$ npm -v 它是 Node 的模块管理器，开发 Node 项目的必备工具。&#xA;课堂练习：Node 的简单应用 进入demos/simple-app-demo目录，参考《操作指南》，自己动手在 Node 里面，编写并编译一个前端脚本。&#xA;Node 开发前端脚本的好处 模块机制 版本管理 对外发布 持续集成的标准开发流程 REST API REST 是浏览器与服务器通信方式的一种设计风格。&#xA;它的全称是“REpresentational State Transfer”，中文意为”表现层状态转换“。&#xA;Resource：资源 Representation：表现层 State：状态 Transfer：转换 REST 的核心概念 互联网上所有可以访问的内容，都是资源。 服务器保存资源，客户端请求资源。 同一个资源，有多种表现形式。 协议本身不带有状态，通信时客户端必须通过参数，表示请求不同状态的资源。 状态转换通过HTTP动词表示。 URL 设计 URL 是资源的唯一识别符。&#xA;/store/1 /store/2 /store/1/employee/2 查询字符串 查询字符串表示对所请求资源的约束条件。&#xA;GET /zoos/1/animals?limit=10 GET /zoos/1/animals?limit=10&amp;amp;offset=10 GET /animals?</description>
+    </item>
     <item>
       <title>📚 文章</title>
-      <link>https://example.org/posts/quickstart/</link>
+      <link>https://jeanshaoz/jeanshaoz.github.io/posts/quickstart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/posts/quickstart/</guid>
+      <guid>https://jeanshaoz/jeanshaoz.github.io/posts/quickstart/</guid>
       <description>学如逆水行舟，不进则退。</description>
     </item>
   </channel>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Node 应用开发 Node 简介 Node 是服务器的 JavaScript 运行环境，提供 API 与操作系统互动。
+主要用途：
+开发前端应用 快速搭建服务 架设网站 npm 安装 Node 的时候，会同时安装 npm。
+$ npm -v 它是 Node 的模块管理器，开发 Node 项目的必备工具。
+课堂练习：Node 的简单应用 进入demos/simple-app-demo目录，参考《操作指南》，自己动手在 Node 里面，编写并编译一个前端脚本。
+Node 开发前端脚本的好处 模块机制 版本管理 对外发布 持续集成的标准开发流程 REST API REST 是浏览器与服务器通信方式的一种设计风格。
+它的全称是“REpresentational State Transfer”，中文意为”表现层状态转换“。
+Resource：资源 Representation：表现层 State：状态 Transfer：转换 REST 的核心概念 互联网上所有可以访问的内容，都是资源。 服务器保存资源，客户端请求资源。 同一个资源，有多种表现形式。 协议本身不带有状态，通信时客户端必须通过参数，表示请求不同状态的资源。 状态转换通过HTTP动词表示。 URL 设计 URL 是资源的唯一识别符。
+/store/1 /store/2 /store/1/employee/2 查询字符串 查询字符串表示对所请求资源的约束条件。
+GET /zoos/1/animals?limit=10 GET /zoos/1/animals?limit=10&amp;offset=10 GET /animals?">
+    <meta name="generator" content="Hugo 0.126.1">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/jeanshaoz.github.io/ananke/css/main.min.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://jeanshaoz/jeanshaoz.github.io/posts/20240527/">
+    
+
+    <meta property="og:url" content="https://jeanshaoz/jeanshaoz.github.io/posts/20240527/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="My New Hugo Site">
+  <meta property="og:description" content="Node 应用开发 Node 简介 Node 是服务器的 JavaScript 运行环境，提供 API 与操作系统互动。
+主要用途：
+开发前端应用 快速搭建服务 架设网站 npm 安装 Node 的时候，会同时安装 npm。
+$ npm -v 它是 Node 的模块管理器，开发 Node 项目的必备工具。
+课堂练习：Node 的简单应用 进入demos/simple-app-demo目录，参考《操作指南》，自己动手在 Node 里面，编写并编译一个前端脚本。
+Node 开发前端脚本的好处 模块机制 版本管理 对外发布 持续集成的标准开发流程 REST API REST 是浏览器与服务器通信方式的一种设计风格。
+它的全称是“REpresentational State Transfer”，中文意为”表现层状态转换“。
+Resource：资源 Representation：表现层 State：状态 Transfer：转换 REST 的核心概念 互联网上所有可以访问的内容，都是资源。 服务器保存资源，客户端请求资源。 同一个资源，有多种表现形式。 协议本身不带有状态，通信时客户端必须通过参数，表示请求不同状态的资源。 状态转换通过HTTP动词表示。 URL 设计 URL 是资源的唯一识别符。
+/store/1 /store/2 /store/1/employee/2 查询字符串 查询字符串表示对所请求资源的约束条件。
+GET /zoos/1/animals?limit=10 GET /zoos/1/animals?limit=10&amp;offset=10 GET /animals?">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+  <meta itemprop="name" content="My New Hugo Site">
+  <meta itemprop="description" content="Node 应用开发 Node 简介 Node 是服务器的 JavaScript 运行环境，提供 API 与操作系统互动。
+主要用途：
+开发前端应用 快速搭建服务 架设网站 npm 安装 Node 的时候，会同时安装 npm。
+$ npm -v 它是 Node 的模块管理器，开发 Node 项目的必备工具。
+课堂练习：Node 的简单应用 进入demos/simple-app-demo目录，参考《操作指南》，自己动手在 Node 里面，编写并编译一个前端脚本。
+Node 开发前端脚本的好处 模块机制 版本管理 对外发布 持续集成的标准开发流程 REST API REST 是浏览器与服务器通信方式的一种设计风格。
+它的全称是“REpresentational State Transfer”，中文意为”表现层状态转换“。
+Resource：资源 Representation：表现层 State：状态 Transfer：转换 REST 的核心概念 互联网上所有可以访问的内容，都是资源。 服务器保存资源，客户端请求资源。 同一个资源，有多种表现形式。 协议本身不带有状态，通信时客户端必须通过参数，表示请求不同状态的资源。 状态转换通过HTTP动词表示。 URL 设计 URL 是资源的唯一识别符。
+/store/1 /store/2 /store/1/employee/2 查询字符串 查询字符串表示对所请求资源的约束条件。
+GET /zoos/1/animals?limit=10 GET /zoos/1/animals?limit=10&amp;offset=10 GET /animals?">
+  <meta itemprop="wordCount" content="170">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My New Hugo Site">
+  <meta name="twitter:description" content="Node 应用开发 Node 简介 Node 是服务器的 JavaScript 运行环境，提供 API 与操作系统互动。
+主要用途：
+开发前端应用 快速搭建服务 架设网站 npm 安装 Node 的时候，会同时安装 npm。
+$ npm -v 它是 Node 的模块管理器，开发 Node 项目的必备工具。
+课堂练习：Node 的简单应用 进入demos/simple-app-demo目录，参考《操作指南》，自己动手在 Node 里面，编写并编译一个前端脚本。
+Node 开发前端脚本的好处 模块机制 版本管理 对外发布 持续集成的标准开发流程 REST API REST 是浏览器与服务器通信方式的一种设计风格。
+它的全称是“REpresentational State Transfer”，中文意为”表现层状态转换“。
+Resource：资源 Representation：表现层 State：状态 Transfer：转换 REST 的核心概念 互联网上所有可以访问的内容，都是资源。 服务器保存资源，客户端请求资源。 同一个资源，有多种表现形式。 协议本身不带有状态，通信时客户端必须通过参数，表示请求不同状态的资源。 状态转换通过HTTP动词表示。 URL 设计 URL 是资源的唯一识别符。
+/store/1 /store/2 /store/1/employee/2 查询字符串 查询字符串表示对所请求资源的约束条件。
+GET /zoos/1/animals?limit=10 GET /zoos/1/animals?limit=10&amp;offset=10 GET /animals?">
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/jeanshaoz.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My New Hugo Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="node-应用开发">Node 应用开发</h1>
+<hr>
+<h2 id="node-简介">Node 简介</h2>
+<p>Node 是服务器的 JavaScript 运行环境，提供 API 与操作系统互动。</p>
+<p>主要用途：</p>
+<ul>
+<li>开发前端应用</li>
+<li>快速搭建服务</li>
+<li>架设网站</li>
+</ul>
+<hr>
+<h2 id="npm">npm</h2>
+<p>安装 Node 的时候，会同时安装 npm。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ npm -v
+</span></span></code></pre></div><p>它是 Node 的模块管理器，开发 Node 项目的必备工具。</p>
+<hr>
+<h2 id="课堂练习node-的简单应用">课堂练习：Node 的简单应用</h2>
+<p>进入<code>demos/simple-app-demo</code>目录，参考<a href="../demos/README.md#simple-app">《操作指南》</a>，自己动手在 Node 里面，编写并编译一个前端脚本。</p>
+<hr>
+<h2 id="node-开发前端脚本的好处">Node 开发前端脚本的好处</h2>
+<ol>
+<li>模块机制</li>
+<li>版本管理</li>
+<li>对外发布</li>
+<li>持续集成的标准开发流程</li>
+</ol>
+<hr>
+<h2 id="rest-api">REST API</h2>
+<p>REST 是浏览器与服务器通信方式的一种设计风格。</p>
+<p>它的全称是“REpresentational State Transfer”，中文意为”表现层状态转换“。</p>
+<ul>
+<li>Resource：资源</li>
+<li>Representation：表现层</li>
+<li>State：状态</li>
+<li>Transfer：转换</li>
+</ul>
+<hr>
+<h2 id="rest-的核心概念">REST 的核心概念</h2>
+<ol>
+<li>互联网上所有可以访问的内容，都是资源。</li>
+<li>服务器保存资源，客户端请求资源。</li>
+<li>同一个资源，有多种表现形式。</li>
+<li>协议本身不带有状态，通信时客户端必须通过参数，表示请求不同状态的资源。</li>
+<li>状态转换通过HTTP动词表示。</li>
+</ol>
+<hr>
+<h2 id="url-设计">URL 设计</h2>
+<p>URL 是资源的唯一识别符。</p>
+<ul>
+<li>/store/1</li>
+<li>/store/2</li>
+<li>/store/1/employee/2</li>
+</ul>
+<hr>
+<h2 id="查询字符串">查询字符串</h2>
+<p>查询字符串表示对所请求资源的约束条件。</p>
+<ul>
+<li>GET /zoos/1/animals?limit=10</li>
+<li>GET /zoos/1/animals?limit=10&amp;offset=10</li>
+<li>GET /animals?zoo_id=1</li>
+</ul>
+<hr>
+<h2 id="http-动词">HTTP 动词</h2>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>SQL方法</th>
+<th>HTTP动词</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CREATE</td>
+<td>INSERT</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>READ</td>
+<td>SELECT</td>
+<td>GET</td>
+</tr>
+<tr>
+<td>UPDATE</td>
+<td>UPDATE</td>
+<td>PUT/PATCH</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>DELETE</td>
+<td>DELETE</td>
+</tr>
+</tbody>
+</table>
+<pre tabindex="0"><code>GET /v1/stores/1234
+PUT /v1/stores/1234
+POST /v1/stores
+DELETE /v1/stores/1234
+</code></pre><hr>
+<h2 id="课堂练习rest-api">课堂练习：REST API</h2>
+<p>打开<code>demos/rest-api-demo</code>，按照<a href="../demos/README.md#rest-api">《操作指南》</a>，熟悉 REST API 的基本用法。</p>
+<hr>
+<h2 id="express">Express</h2>
+<p>Express 是最常用的 Node 框架，用来搭建 Web 应用。</p>
+<p><img src="./images/express.png" alt=""></p>
+<hr>
+<h2 id="课堂练习express-搭建-web-应用">课堂练习：Express 搭建 Web 应用</h2>
+<p>进入<code>demos/express-demo</code>目录，按照<a href="../demos/README.md#express">《操作指南》</a>，学习使用 Express 搭建 Web 应用。</p>
+<hr>
+<p>定义一个 Web 应用实例，并且启动它。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">express</span>    <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">app</span>        <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">port</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">PORT</span> <span style="color:#f92672">||</span> <span style="color:#ae81ff">8080</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">port</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Magic happens on port &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">port</span>);
+</span></span></code></pre></div><hr>
+<p>定义一个路由</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">router</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">Router</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/&#39;</span>, <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#39;&lt;h1&gt;Hello World&lt;/h1&gt;&#39;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#e6db74">&#39;/home&#39;</span>, <span style="color:#a6e22e">router</span>);
+</span></span></code></pre></div><hr>
+<p>中间件：对 HTTP 请求进行加工。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">router</span>.<span style="color:#a6e22e">use</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>, <span style="color:#a6e22e">next</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;There is a requesting.&#39;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">next</span>();
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://jeanshaoz/jeanshaoz.github.io/" >
+    &copy;  My New Hugo Site 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

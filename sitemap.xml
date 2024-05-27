@@ -2,14 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/posts/quickstart/</loc>
+    <loc>https://jeanshaoz/jeanshaoz.github.io/posts/20240527/</loc>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://jeanshaoz/jeanshaoz.github.io/posts/quickstart/</loc>
   </url><url>
-    <loc>https://example.org/</loc>
+    <loc>https://jeanshaoz/jeanshaoz.github.io/categories/</loc>
   </url><url>
-    <loc>https://example.org/posts/</loc>
+    <loc>https://jeanshaoz/jeanshaoz.github.io/</loc>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://jeanshaoz/jeanshaoz.github.io/posts/</loc>
+  </url><url>
+    <loc>https://jeanshaoz/jeanshaoz.github.io/tags/</loc>
   </url>
 </urlset>
